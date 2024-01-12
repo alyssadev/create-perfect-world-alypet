@@ -8,6 +8,8 @@ jobs:
   release:
     name: Release zip
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
     - uses: actions/checkout@master
     - uses: TheDoctor0/zip-release@0.7.6
