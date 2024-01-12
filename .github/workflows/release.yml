@@ -1,0 +1,21 @@
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  release:
+    name: Release zip
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: TheDoctor0/zip-release@0.7.6
+      with:
+        type: zip
+        filename: create-perfect-world-alypet.zip
+        exclusions: "*.git*"
+    - name: Upload Release
+      uses: ncipollo/release-action@main
+      with:
+        artifacts: "create-perfect-world-alypet.zip"
+        token: ${{ secrets.GITHUB_TOKEN }}
