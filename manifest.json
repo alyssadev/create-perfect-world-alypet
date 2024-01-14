@@ -11,9 +11,14 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Create-Perfect-World-alypet",
-  "version": "0.5.3c",
+  "version": "0.5.3d",
   "author": "mrbeardstone & alypet",
   "files": [
+    {
+      "projectID": 361354,
+      "fileID": 4815036,
+      "required": true
+    },
     {
       "projectID": 378609,
       "fileID": 4792109,
